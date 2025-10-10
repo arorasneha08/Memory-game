@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Master</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f1419, #1e272e);
+            color: #74b9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2rem;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 5px 0px 5px #0984e3;
+            }
+
+            to {
+                text-shadow: 5px 0px 20px #6c5ce7;
+            }
+        }
+        p{
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Match Master</h1>
+    <p>Loading...</p>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "/pages/register.html";
+        }, 2000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #f5f6fa;
+  background: radial-gradient(circle at top left, #0f1419, #1e272e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease; 
+  /* transition: transform 0.2s ease, background 0.3s ease; */
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.register-container {
+  background: rgba(30, 39, 46, 0.95);
+  padding: 50px 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(116, 185, 255, 0.2);
+  width: 90%;
+  max-width: 400px;
+  animation: fadeIn 0.6s ease;
+}
+
+.game-title {
+  color: #74b9ff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #b2bec3;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: #2f3640;
+  color: #f5f6fa;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.register-form input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(9, 132, 227, 0.4);
+  border: 1px solid #0984e3;
+}
+
+.btn-glow {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #0984e3, #6c5ce7);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(9, 132, 227, 0.4);
+}
+
+.btn-glow:hover {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-btn {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #00b894, #55efc4);
+  box-shadow: 0 0 10px rgba(0, 184, 148, 0.4);
+}
+
+.dashboard-btn:hover {
+  background: linear-gradient(135deg, #55efc4, #81ecec);
+}

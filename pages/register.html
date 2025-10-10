@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Match Master</title>
+    <link rel="stylesheet" href="../styles/register.css" />
+</head>
+
+<body class="register-body">
+    <div class="register-container">
+        <h1 class="game-title">Match Master</h1>
+        <p class="tagline">Register to begin your adventure!</p>
+
+        <form id="register-form" class="register-form">
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <input type="password" id="password" placeholder="Create a password" required minlength="6" />
+            <button type="submit" class="btn-glow">Register 🚀</button>
+        </form>
+
+        <p style="margin-top:10px;">Already have an account?
+            <a href="login.html" style="color:#74b9ff; text-decoration:none;">Login</a>
+        </p>
+    </div>
+
+    <script src="../scripts/register.js"></script>
+</body>
+
+</html>
