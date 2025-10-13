@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Difficulty - Memory Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/level.css" />
+</head>
+
+<body class="home-body">
+    <div class="home-container">
+        <h1 class="game-title">🧠 Match Master</h1>
+        <p id="welcome-text" class="welcome-text"></p>
+
+        <div class="difficulty-container">
+            <h2>Select Your Difficulty</h2>
+            <div class="difficulty-buttons">
+                <button class="difficulty-btn easy">Easy (2x2)</button>
+                <button class="difficulty-btn medium">Medium (4x4)</button>
+                <button class="difficulty-btn hard">Hard (6x6)</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="goodluck-modal">
+        <div class="modal-content">
+            <h2>🍀 Good Luck!</h2>
+            <p>Get ready to test your memory...</p>
+        </div>
+    </div>
+
+    <script src="../scripts/level.js"></script>
+</body>
+
+</html>

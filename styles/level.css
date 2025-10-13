@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f1419, #1e272e);
+  color: #dfe6e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-container {
+  background: rgba(30, 39, 46, 0.95);
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(9, 132, 227, 0.3);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in;
+  max-width: 500px;
+  width: 90%;
+}
+
+.game-title {
+  color: #74b9ff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  color: #b2bec3;
+  margin-bottom: 30px;
+}
+
+.difficulty-container h2 {
+  color: #dfe6e9;
+  margin-bottom: 20px;
+}
+
+.difficulty-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.difficulty-btn {
+  background: linear-gradient(135deg, #0984e3, #6c5ce7);
+  border: none;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 80%;
+  max-width: 250px;
+  box-shadow: 0 0 10px rgba(9, 132, 227, 0.3);
+  transition: all 0.3s ease;
+}
+
+.difficulty-btn:hover {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: #1e272e;
+  color: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(9, 132, 227, 0.4);
+  animation: popIn 0.4s ease;
+}
+
+.modal-content h2 {
+  color: #74b9ff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 1.1rem;
+  color: #b2bec3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 35px 25px;
+  }
+
+  .difficulty-btn {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 85%;
+    padding: 25px 20px;
+  }
+}
