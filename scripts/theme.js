@@ -19,7 +19,6 @@ const triviaCategories = ["Science 🔬", "Math ➕", "Geography 🌍", "History
 let selectedTheme = "";
 let selectedCategory = "";
 
-// Handle theme button click
 themeButtons.forEach(button => {
   button.addEventListener("click", () => {
     if (button.classList.contains("emoji")) {

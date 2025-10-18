@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memory Game - Play</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Adjust path if necessary -->
+  <link rel="stylesheet" href="../styles/game.css" />
+</head>
+<body class="game-body" data-type="" data-subcategory="">
+  <header class="game-header">
+    <div class="title">
+      <h1>🧠 Match Master</h1>
+      <p id="sub-info"></p>
+    </div>
+
+    <div class="status-panel">
+      <div class="timer-box">
+        <div class="label">Timer</div>
+        <div id="timer">02:00</div>
+      </div>
+
+      <!-- Single-player score panel -->
+      <div class="score-box" id="score-single">
+        <div class="label">Score</div>
+        <div id="score">0</div>
+        <div class="label" style="margin-top:8px;">Moves</div>
+        <div id="moves">0</div>
+      </div>
+
+      <!-- Two-player panel -->
+      <div class="twoplayer-panel hidden" id="twoplayer-panel">
+        <div class="player-card" id="player1-card">
+          <div class="player-name">Player 1</div>
+          <div class="player-score" id="p1-score">P1: 0 pts (0 moves)</div>
+          <div class="player-powerups">
+            <button class="power-btn" id="p1-freeze">Freeze (10s)</button>
+            <button class="power-btn" id="p1-reveal">Reveal (10s)</button>
+          </div>
+        </div>
+        <div class="turn-indicator" id="turn-indicator">Turn: Player 1</div>
+        <div class="player-card" id="player2-card">
+          <div class="player-name">Player 2</div>
+          <div class="player-score" id="p2-score">P2: 0 pts (0 moves)</div>
+          <div class="player-powerups">
+            <button class="power-btn" id="p2-freeze">Freeze (10s)</button>
+            <button class="power-btn" id="p2-reveal">Reveal (10s)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="game-main">
+    <div id="board" class="board"></div>
+  </main>
+
+  <!-- Win / Lose Modal -->
+  <div class="modal hidden" id="result-modal">
+    <div class="modal-content">
+      <h2 id="result-title">Result</h2>
+      <p id="result-text"></p>
+      <div class="modal-actions">
+        <button id="play-again" class="modal-btn">Play Again</button>
+        <button id="go-dashboard" class="modal-btn alt">Dashboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- small helper notif -->
+  <div id="notif" class="notif hidden"></div>
+
+  <!-- Adjust path if necessary -->
+  <script src="../scripts/game.js" defer></script>
+</body>
+</html>
