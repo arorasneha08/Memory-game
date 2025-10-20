@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/dashboard.css" />
+</head>
+
+<body class="dashboard-body">
+  <div class="dashboard-container">
+    <h1 class="dashboard-title">🎯 Game Dashboard</h1>
+    <p id="user-info"></p>
+
+    <div class="dashboard-buttons">
+      <button class="btn-primary" id="home-btn">🏠 Back To Game</button>
+      <button class="btn-secondary" id="logout-btn">🚪 Logout</button>
+    </div>
+
+    <table class="history-table" id="history-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Players</th>
+          <th>Time</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="history-body">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="../scripts/dashboard.js"></script>
+</body>
+
+</html>
